@@ -45,8 +45,7 @@ export default defineNuxtConfig({
   components: [
     { path: "~/components/layout", pathPrefix: false },
     { path: "~/components/UI", pathPrefix: false },
-    { path: "~/components/home", pathPrefix: false },
-    { path: "~/components/person-detail", pathPrefix: false }
+    { path: "~/components/home", pathPrefix: false }
   ],
 
   vite: {

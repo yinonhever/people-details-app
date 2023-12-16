@@ -2,7 +2,7 @@
 
 ## About the project
 
-A web application displaying details about random people. The project is built with Nuxt.js 3 and TypeScript, uses Pinia and the Composition API for state management, and is styled using SCSS and Vuetify.
+A web application displaying details about random people. The project is built with **Nuxt.js 3** and **TypeScript**, uses **Pinia** and the **Composition API** for state management, and is styled using **SCSS** and **Vuetify**.
 
 ## How to run
 

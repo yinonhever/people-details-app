@@ -68,15 +68,13 @@ import cloneDeep from "clone-deep";
 import { useStore } from "~/store";
 
 const store = useStore();
-const { people, hasLoaded } = storeToRefs(store);
+const { people } = storeToRefs(store);
 const { updatePersonData } = store;
-
 const router = useRouter();
-if (!hasLoaded) {
-  router.replace("/");
-}
-
 const route = useRoute();
+
+// Looking for a person matching the person ID that was passed as a URL parameter.
+// If no macthing user is found, a 404 error page is displayed.
 const { id: personId } = route.params;
 const matchingPerson = people.value.find(
   person => person.login.uuid === personId
@@ -98,6 +96,12 @@ const address = computed(() => {
 const formData = reactive(cloneDeep(matchingPerson));
 const error = ref<Error | null>();
 
+/**
+ * Handling click of the submit button in the person details, in order to update the person's
+ * full name. If one of the name's fields is missing, an error message is displayed. If all fields
+ * are filled, the person's data is updated with the new name, and the user is redirected
+ * to the homepage.
+ */
 const submitHandler = () => {
   const { title, first, last } = formData.name;
   if (!title || !first || !last) {

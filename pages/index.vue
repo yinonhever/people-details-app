@@ -24,6 +24,11 @@ const error = ref<Error | null>(null);
 
 const { loadPeople } = store;
 
+/**
+ * Handling click of the 'load people' button by loading the people's data into the
+ * global state, updating the page's UI accordingly and setting a loading/error state
+ * when needed.
+ */
 const buttonClickHandler = async () => {
   loading.value = true;
   try {

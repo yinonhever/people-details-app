@@ -9,6 +9,11 @@ const customTheme: ThemeDefinition = {
   }
 };
 
+/**
+ * Defining a Vuetify plugin that would allow the app to use
+ * pre-built Vuetify 3 components, while applying a slightly modified
+ * custom theme.
+ */
 export default defineNuxtPlugin(nuxtApp => {
   const vuetify = createVuetify({
     ssr: true,

@@ -7,6 +7,8 @@
 </template>
 
 <script setup lang="ts">
+// A reusable component of a button that takes the user back to the previous page
+// they visited.
 const router = useRouter();
 </script>
 
