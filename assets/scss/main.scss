@@ -1,0 +1,33 @@
+html {
+  font-family: "Montserrat", sans-serif !important;
+}
+
+#__nuxt {
+  flex-direction: column;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Livvic", sans-serif;
+}
+
+// PAGE TRANSITION
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.45s;
+}
+
+.page-enter-to,
+.page-leave-from {
+  opacity: 1;
+}
+
+a {
+  text-decoration: none;
+}
