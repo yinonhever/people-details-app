@@ -1,75 +1,21 @@
-# Nuxt 3 Minimal Starter
+# People Details App
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## About the project
 
-## Setup
+A web application displaying details about random people. The project is built with Nuxt.js 3 and TypeScript, uses Pinia and the Composition API for state management, and is styled using SCSS and Vuetify.
 
-Make sure to install the dependencies:
+## How to run
 
-```bash
-# npm
+You can view the live website on **https://people-details-app.vercel.app**.
+
+Alternatively, you can run the project locally on your machine by running the following commands:
+
+```
+git clone https://github.com/yinonhever/people-details-app.git
+cd people-details-app
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
 npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+node .output/server/index.mjs
 ```
 
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+The website would then be available on **http://localhost:3000**.
